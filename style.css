@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to left,rgb(110, 187, 148),rgb(125, 101, 198));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+}
+
+.main{
+    width: 30rem;
+    padding: 2rem 2rem;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main header{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.main .content{
+    margin: 1rem 0;
+}
+
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i{
+    font-size: 1rem;
+    color: crimson;
+}
+
+.quote-area i:first-child{
+    margin: .2rem .5rem 0 0;
+}
+
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 .5rem .2rem;
+}
+
+.quote-area .quote{
+    font-size: 1.6rem;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    /* font-size: 1rem; */
+    font-style: italic;
+}
+
+.author .name{
+    font-size: 1.3rem;
+}
+
+.main .buttons{
+    border-top: 2px solid rgb(60, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.features ul{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 .4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(12, 13, 12);
+    color:rgba(4, 24, 174, 0.889);
+    border-radius: 50%;
+    cursor: pointer;
+    /* background-color: rgb(210, 185, 85); */
+}
+
+.features ul li:hover{
+    background-color: rgb(30, 210, 198);
+}
+
+.buttons button{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: .5rem;
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    background: #106401;
+}
+
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1.5rem; */
+}
+
+.btn2 a{
+     margin-top: 2rem;
+    padding: 10px 12px;
+    text-decoration: none;
+    border: 3px solid black;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    color: black;
+    transition: 0.5s;
+    display: inline-block;
+    background: transparent;
+    border-radius: .5rem;
+    background: green;
+    margin-bottom: 1rem;
+  }
+  
+  .btn2:hover{
+    cursor: pointer;
+}
+
+button .loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+#tanu{
+    margin-bottom: -1.5rem;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+@media screen and (max-width: 350px){
+    .main{
+        transform: scale(.8);
+    }
+}
+  
